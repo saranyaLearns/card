@@ -1,13 +1,202 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@200&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: #273c75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  flex-direction: column;
+
+}
+.container{ 
+  height: auto;
+  width: 220px;
+  background-color: gainsboro; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.container .img img{
+  height: 100px;
+  width: 100px;  
+  margin-top: 20px;
+}
+.container .nav{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.description{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: black;
+}
+.description h3{
+  font-size: 16px;
+}
+.description h2{
+  font-size: 14px;
+}
+.description p{
+  font-size: 16px;
+}
+.nav .thumbnail .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.nav .btn_color button{
+  margin: 0px 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.nav .btn_color button:hover{
+  cursor: pointer;
+}
+.nav .btn_color button:nth-child(1){
+  background-color: #273c75;
+}
+.nav .btn_color button:nth-child(2){
+  background-color: silver;
+}
+.nav .btn_color button:nth-child(3){
+  background-color: palegreen;
+}
+.nav .btn_color button:nth-child(4){
+  background-color: black;
+}
+.size{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.size .size-desc{
+  display: flex;
+}
+.size h2{
+  margin-top: 4px;
+}
+.size p{
+  padding: 3px;
+  background-color: rgba(217, 228, 226, 0.459);
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 12px;
+  padding-left: 3px;
+  margin: 2px;
+}
+.size p:hover{
+  background-color: rgb(116, 116, 113);
+}
+.qty{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.btn-grp{
+  display: flex;
+  margin: 5px 5px;
+}
+.btn-grp span{
+  margin: 5px;
+}
+.btn-grp h2{
+  padding: 0px 5px;
+
+}
+button{
+  width: 40px;
+}
+.buy{
+  height: 30px;
+  width: 200px;
+  background-color: #7f8fa6;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.buy:hover{
+  background-color: white;
+  border: 1px solid rgb(168, 166, 166);
+}
+.cont {
+  background-color: #273c75;
+}
+.button {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  margin-left: 70px;
+  margin-top: 100px;
+}
+.cont1 {
+  background-color: #273c75;
+}
+.cont2 {
+  background-color: silver;
+}
+.cont3 {
+  background-color: palegreen;
+}
+.cont4 {
+  background-color: black;
+}
+.total{
+  display: none;
+}
+.total .total_desc{
+  display: flex;
+}
+.total .total_desc h4{
+  margin-top: 10px;
+}
+.total .total_desc input[type="text"]{
+  width: 60px;
+  font-size: 16px;
+  border: none;
+  background-color: gainsboro;
+  margin: 0px 5px;
+  user-select: none;
+}
+.total .confirmation p{
+  font-size: 13px;
+  background-color: rgb(117, 216, 117);
+  color: black;
+  font-weight: 200;
+  padding: 6px;
+}
+.total .star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.total .star i{
+  font-size: 22px;
+  margin: 0px 3px;
+  color: grey;
+  font-weight: bold;
+}
+.total .star i:hover{
+  color: orange;
 }
